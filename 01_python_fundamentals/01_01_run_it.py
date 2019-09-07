@@ -15,3 +15,7 @@
 
 '''
 print ('hellow world')
+
+# help()
+print (1+ 2) # math tests
+print (365*24*60*60) # number of seconds in a year
