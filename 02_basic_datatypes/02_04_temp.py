@@ -10,3 +10,10 @@ Output should read like - "81.32 degrees fahrenheit = 27.4 degrees celsius"
 
 
 '''
+
+Fahrenheit = float(input("Please insert a value of Fahrenheit between 32 and 212"))
+Celsius = float((Fahrenheit - 32) * ( 5 / 9))
+print(round(Fahrenheit, 2), end= '')
+print(" degrees fahrenheit = ", end= '')
+print(round(Celsius, 1), end='')
+print(" degrees Celsius")
