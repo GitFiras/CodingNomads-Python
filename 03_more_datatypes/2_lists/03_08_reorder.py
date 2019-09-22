@@ -7,3 +7,17 @@ Example input:  1,2,3,4,5,6,7,8,9,10
 Example output: 2,4,6,8,10,9,7,5,3,1
 
 '''
+
+#num = input("Please provide 10 numbers: ")
+#x = num.split()
+#print(x)
+
+#list_ = list(map(int,num.split()))                  # split user input, make int, make into list
+#print(list_)
+
+list_2 = [1,2,3,4,5,6,7,8,9,10]
+print(list_2)
+
+x = list_2[1::2]                                    # starting at 2nd value, step size of 2
+y = list_2[-2::-2]                                  # starting at the back of list. 1 before end, step  size of 2
+print(x + y)

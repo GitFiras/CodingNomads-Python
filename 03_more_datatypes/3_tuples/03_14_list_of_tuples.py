@@ -6,3 +6,6 @@ input = "hello world"
 result_list = [('h', 'e', 'l', 'l', 'o'), ('w', 'o', 'r', 'l', 'd')]
 
 '''
+s = input("Please insert a few words here: ")
+tuples_list = tuple(s)
+print(tuples_list)
