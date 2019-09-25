@@ -18,3 +18,36 @@ famous_quotes = [
     {"full_name": "Nathan Myhrvold", "quote": "Software is a gas; it expands to fill its container."},
     {"full_name": "Alan Bennett", "quote": "Standards are always out of date.  That’s what makes them standards."}
 ]
+# 1: split values of 'full_name' dict key into 'last_name' and 'first_name' values
+# 2: print dict values {"quote"}" - "{last_name}", "{first_name}
+# Solution direction: print(f'(famous_quotes{"quote"}, " - ","{last_name}", "{first_name}"' in famous_quotes)
+
+for dict in famous_quotes:
+    name = dict["full_name"].split()
+    print("'",dict["quote"],"'",'-',name[1],",",name[0])
+
+
+'''
+#alternative method : for loop to enter dict values
+for dict in famous_quotes:
+    print(dict["quote"]," - ", dict["full_name"].split())
+'''
+
+'''
+#alternative method :
+quote1 = famous_quotes[0]
+quote2 = famous_quotes[1]
+quote3 = famous_quotes[2]
+quote4 = famous_quotes[3]
+quote5 = famous_quotes[4]
+quote6 = famous_quotes[5]
+quote7 = famous_quotes[6]
+
+print(f'{quote1["quote"]} - {quote1["full_name"]}')
+print(f'{quote2["quote"]} - {quote2["full_name"]}')
+print(f'{quote3["quote"]} - {quote3["full_name"]}')
+print(f'{quote4["quote"]} - {quote4["full_name"]}')
+print(f'{quote5["quote"]} - {quote5["full_name"]}')
+print(f'{quote6["quote"]} - {quote6["full_name"]}')
+print(f'{quote7["quote"]} - {quote7["full_name"]}')
+'''

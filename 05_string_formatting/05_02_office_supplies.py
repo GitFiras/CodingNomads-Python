@@ -25,3 +25,10 @@ office = [
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
+
+
+for dict in office:
+    name = dict["full_name"].split()
+    print(name[1],",",name[0],"        ", dict["item"])
+
+
