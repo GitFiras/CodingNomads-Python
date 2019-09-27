@@ -24,7 +24,11 @@ famous_quotes = [
 
 for dict in famous_quotes:
     name = dict["full_name"].split()
-    print("'",dict["quote"],"'",'-',name[1],",",name[0])
+#    print("'",dict["quote"],"'",'-',name[1],",",name[0])       # alternative method
+    if len(name) == 3:
+        print(f'"{dict["quote"]}" - {name[2]}, {name[0]} {name[1]}')
+    else:
+        print(f'"{dict["quote"]}" - {name[1]}, {name[0]}')
 
 
 '''

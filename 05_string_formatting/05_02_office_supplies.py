@@ -29,6 +29,6 @@ office = [
 
 for dict in office:
     name = dict["full_name"].split()
-    print(name[1],",",name[0],"        ", dict["item"])
+#    print(name[1],",",name[0],"               ", dict["item"])
 
-
+    print(f'{name[1]}, {name[0]} {dict["item"]:>20}')
