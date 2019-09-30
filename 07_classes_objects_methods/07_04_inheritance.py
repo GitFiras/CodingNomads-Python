@@ -18,3 +18,40 @@ CLASSES AND INHERITANCE
     Any class attributes you could add?
 
 '''
+
+#1 & 2
+class Movie:
+    def __init__(self, year,title):
+        self.year = year
+        self.title = title
+        print(f'This movie was released in {self.year} and was called {self.title}.')
+
+m = Movie(2019,'comedy')
+print(m)
+print(m.year)
+print(m.title)
+
+
+#3
+class RomCom(Movie):
+    def __init__(self,actor,humour):
+#        super().__init__(self, year,title)
+        self.actor = actor
+        self.humour = humour
+
+
+mov = RomCom('John T.','slapstick')
+print(mov.actor)
+print(mov.humour)
+print(f'This RomCom stars {mov.actor} with a sense of {mov.humour} humour.')
+
+
+#4: overwrite dunder of Movie, add instance variable 'pg' = 13 default value
+class ActionMovie(Movie):
+    def __init__(self,year,title,pg=13):
+        self.pg = pg
+        print(f'This movie was released in {year} and was called {title}, with a pg of {pg}.')
+
+new = ActionMovie(2018,'GoGoGo')
+print(new.pg)
+
