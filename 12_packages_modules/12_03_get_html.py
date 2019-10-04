@@ -9,3 +9,21 @@ TIP:
     very common. head over to SO and find a solution!
 
 '''
+
+import urllib.request
+
+fp = urllib.request.urlopen("http://codingnomads.co")
+page = fp.read()
+
+page = page.decode("utf8")
+fp.close()
+
+print(page)
+
+'''
+import requests
+url = requests.get("https://codingnomads.co/")
+htmltext = url.text
+print(htmltext)
+'''
+
