@@ -7,3 +7,12 @@ test should pass.
 Also include a test that does not pass.
 
 '''
+
+inp = input("Provide number: ")
+def calc():
+    res = inp * 100
+    print(res)
+    return res
+
+# test to pass
+# test to not pass

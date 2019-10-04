@@ -24,10 +24,10 @@ class Glass:
         self.glass_shape = glass_shape
         self.glass_colour = glass_colour
         self.glass_temperature = glass_temperature
-        print(f'This {Glass} is {glass_shape}, {self.glass_colour} and is best used {self.glass_temperature}')
+        print(f'This glass is {self.glass_shape}, {self.glass_colour} and is best used {self.glass_temperature}')
 
     def __str__(self):
-        return f'This {Glass} is {glass_shape}, {self.glass_colour} and is best used {self.glass_temperature}'
+        return f'This glass is {self.glass_shape}, {self.glass_colour} and is best used {self.glass_temperature}'
 
     def Drink(self,temperature,colour,flavour,mixable):
         self.temperature = temperature
@@ -48,8 +48,7 @@ class Glass:
 
 p = Glass('round','blue','cold')
 print('The shape of the glass is: ',p.glass_shape)
-print(Glass)
-print(p.Drink)
+print(p)
 
 class Plate(Glass):
     '''class of a plate, with attributes of a plate for food'''
@@ -59,7 +58,7 @@ class Plate(Glass):
         self.plate_colour = plate_colour
 
     def __str__(self):
-        return f'This {Plate} is {self.plate_shape} and {self.plate_colour}.'
+        return f'This plate is {self.plate_shape} and {self.plate_colour}.'
 
     def content(self,food,snacks,decoration):
         self.food = food
@@ -81,7 +80,7 @@ class Place:
         self.number_of_people = number_of_people
 
     def __str__(self):
-        return f'This {Place} is located in {self.location}, and fits {self.number_of_people}.'
+        return f'This place is located in {self.location}, and fits {self.number_of_people}.'
 
     def Room(self, light_intensity,capacity,noise):
         self.light_intensity = light_intensity

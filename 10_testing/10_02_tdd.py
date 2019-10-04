@@ -8,3 +8,12 @@ fail and write tests that will check and prevent failure.
 You do not need to implement the actual functions after writing the tests but you may.
 
 '''
+x = 1
+y = 5
+def calculate():
+    z = x + y
+    zz = z / x
+
+import unittest
+class Pack(unittest.TestCase):
+    def assertEqual(self)
